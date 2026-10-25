@@ -232,6 +232,91 @@ p(t) = v(t) · i(t),   Pavg = Vrms² / R
 **Example:** DMM 2.003 V vs display 1.000 V → +100.3%.
 
 
+## Practice questions
+
+Same concepts and formulas as the Brightspace quiz, with new numbers (not the real quiz questions). Try each one before opening the answer.
+
+**Q1.** The generator is set to 2 Vpp (assuming 50 Ω) and drives a 100 Ω load. What is the real output?
+
+<details><summary>Show answer</summary>
+
+**2.67 Vpp**. Vs = 2 × 2 = 4 Vpp. Vout = 4 × 100/(50 + 100) = 2.67 Vpp.
+
+</details>
+
+**Q2.** Same setting, but the load is a 10 MΩ scope probe. What does the scope show?
+
+<details><summary>Show answer</summary>
+
+**≈ 4 Vpp**. With RL ≫ 50 Ω almost nothing is lost inside: Vout ≈ Vs = 4 Vpp, twice the display.
+
+</details>
+
+**Q3.** What is the RMS voltage of a 3 Vpp sine wave?
+
+<details><summary>Show answer</summary>
+
+**1.06 V**. Vp = 1.5 V. Vrms = 1.5/√2 = 1.061 V.
+
+</details>
+
+**Q4.** A pulse wave goes between 0 V and 5 V with a 30% duty cycle. Find Vrms.
+
+<details><summary>Show answer</summary>
+
+**2.74 V**. VL = 0, so Vrms = VH√D = 5 × √0.3 = 2.739 V.
+
+</details>
+
+**Q5.** A rectangular wave is +2 V for 25% of the period and −1 V for the rest. Find Vrms.
+
+<details><summary>Show answer</summary>
+
+**1.32 V**. √(VH²D + VL²(1 − D)) = √(4 × 0.25 + 1 × 0.75) = √1.75 = 1.323 V.
+
+</details>
+
+**Q6.** What is the RMS voltage of a 6 Vpp triangle wave?
+
+<details><summary>Show answer</summary>
+
+**1.73 V**. Vp = 3 V. Vrms = 3/√3 = 1.732 V.
+
+</details>
+
+**Q7.** At 2 V/div a wave is 3.4 divisions tall; at 0.5 ms/div one period is 4.2 divisions. Find Vpp, period and frequency.
+
+<details><summary>Show answer</summary>
+
+**6.8 Vpp, 2.1 ms, 476 Hz**. Vpp = 3.4 × 2 = 6.8 V. T = 4.2 × 0.5 ms = 2.1 ms. f = 1/T = 476 Hz.
+
+</details>
+
+**Q8.** The scope triggers on a 2 kHz signal. The other channel is 2003 Hz. How fast does it drift?
+
+<details><summary>Show answer</summary>
+
+**3 cycles per second**. Drift rate = |2003 − 2000| = 3 Hz: the untriggered wave slides by 3 full cycles each second.
+
+</details>
+
+**Q9.** A 10:1 probe touches a 3 Vpp signal. What reaches the scope’s BNC, and what does the screen show?
+
+<details><summary>Show answer</summary>
+
+**0.3 Vpp; 3 Vpp**. The probe divides by 10 (9 MΩ + 1 MΩ). The scope knows it’s a 10:1 probe and multiplies by 10.
+
+</details>
+
+**Q10.** What average power does a 1 V peak sine deliver to 2.2 kΩ?
+
+<details><summary>Show answer</summary>
+
+**227 µW**. Vrms = 0.707 V. Pavg = Vrms²/R = 0.5/2200 = 227 µW.
+
+</details>
+
+
 ## Report guide
 
 1. % error, generator display vs DMM (step 4) and explanation (50 Ω assumption).
